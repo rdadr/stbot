@@ -53,7 +53,7 @@ const start = () => {
         }
         if (data===chats[chatId]){
             return await bot.sendMessage (chatId, `угадал ${chats[chatId]}`, againgOptions);
-        }else{
+        } else {
             return await bot.sendMessage (chatId, `не угадал ${chats[chatId]}`, againgOptions);
         }
     // bot.sendMessage(chatId, `Ваш выбор ${data}`);
