@@ -15,7 +15,7 @@ const startRating = async (chatId) =>{
     await bot.sendMessage(chatId, `Готель \"ДНІПРО\"`);
 const randomNumber = Math.floor(Math.random()*5)
 chats[chatId]=randomNumber;
-await bot.sendMessage(chatId, `Оцініть якість обслуговування від 0 до 5`, ratingOptions);
+    await bot.sendMessage(chatId, `Оцініть якість обслуговування від 0 до 5`, ratingOptions);
 
 }
 
