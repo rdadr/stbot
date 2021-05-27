@@ -31,7 +31,7 @@ const start = () => {
         const chatId = msg.chat.id;
     
         if(text=== '/start'){
-            await bot.sendSticker(chatId, `https://tlgrm.ru/_/stickers/09d/4f5/09d4f569-894b-3f75-a860-698ed407a581/4.webp`);
+            await bot.sendSticker(chatId, `./stickers/4.webp`);
             return bot.sendMessage(chatId, `Я Star-IT бот. Радий Вас вітати! ${msg.from.first_name} ${msg.from.last_name}`)
     };
 
@@ -41,7 +41,7 @@ const start = () => {
         }
     //Не понимаю, что это значит, не кошерно
     // return bot.sendMessage(chatId, `Не понимаю, что это значит`);
-    return bot.sendSticker(chatId, `https://tlgrm.ru/_/stickers/09d/4f5/09d4f569-894b-3f75-a860-698ed407a581/7.webp`);
+    return bot.sendSticker(chatId, `./stickers/7.webp`);
     })
 
      //game2
