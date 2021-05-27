@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/rdadr/stbot/issues"
   },
-  "homepage": "https://github.com/rdadr/stbot#readme",
+  "homepage": "https://git.heroku.com/nodestbot.git",
   "dependencies": {
     "node-telegram-bot-api": "^0.53.0",
     "nodemon": "^2.0.7"
