@@ -52,7 +52,7 @@ const start = () => {
             return startRating(chatId);
         }
         if (data===chats[chatId]){
-            return await bot.sendMessage (chatId, `Щиро дякуюtext ${chats[chatId]}`, againgOptions);
+            return await bot.sendMessage (chatId, `Щиро дякую ${chats[chatId]}`, againgOptions);
         } else {
             return await bot.sendMessage (chatId, `Дякую ${chats[chatId]}`, againgOptions);
         }
