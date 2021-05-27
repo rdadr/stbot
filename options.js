@@ -11,8 +11,17 @@ module.exports={
  againgOptions : {
     reply_markup: JSON.stringify({
         inline_keyboard: [
-            [{text: 'Бажаєте еще?', callback_data: `/again`}],
+            [{text: 'Бажаєте ще?', callback_data: `/again`}],
         ]
     })
-}
+},
+
+// exitOptions : {
+//     reply_markup: JSON.stringify({
+//         inline_keyboard: [
+//             [{text: 'Вихід', callback_data: `/exit`}],
+//         ]
+//     })
+// }
+
 }
