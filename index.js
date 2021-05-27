@@ -12,18 +12,18 @@ const chats = {}
 
 
 const startRating = async (chatId) =>{
-    await bot.sendMessage(chatId, `Оцените наше обслуживание от 1 до 5}`);
+    await bot.sendMessage(chatId, `Готель \"ДНІПРО\"`);
 const randomNumber = Math.floor(Math.random()*5)
 chats[chatId]=randomNumber;
-await bot.sendMessage(chatId, `Отгадай`, ratingOptions);
+await bot.sendMessage(chatId, `Оцініть якість обслуговування від 0 до 5`, ratingOptions);
 
 }
 
 const start = () => {
 
     bot.setMyCommands([
-        {command: '/start', description: 'Приветствие'},
-        {command: '/rating', description: 'Оценить'},
+        {command: '/start', description: 'Вітання'},
+        {command: '/rating', description: 'Оцінка'},
     ])
     
     bot.on('message', async msg =>{
@@ -32,7 +32,7 @@ const start = () => {
     
         if(text=== '/start'){
             await bot.sendSticker(chatId, `https://tlgrm.ru/_/stickers/09d/4f5/09d4f569-894b-3f75-a860-698ed407a581/4.webp`);
-            return bot.sendMessage(chatId, `Я Star-IT бот. Приятно познакомиться ${msg.from.first_name} ${msg.from.last_name}`)
+            return bot.sendMessage(chatId, `Я Star-IT бот. Радий Вас вітати! ${msg.from.first_name} ${msg.from.last_name}`)
     };
 
     //rating
@@ -52,9 +52,9 @@ const start = () => {
             return startRating(chatId);
         }
         if (data===chats[chatId]){
-            return await bot.sendMessage (chatId, `угадал ${chats[chatId]}`, againgOptions);
+            return await bot.sendMessage (chatId, `Щиро дякуюtext ${chats[chatId]}`, againgOptions);
         } else {
-            return await bot.sendMessage (chatId, `не угадал ${chats[chatId]}`, againgOptions);
+            return await bot.sendMessage (chatId, `Дякую ${chats[chatId]}`, againgOptions);
         }
     // bot.sendMessage(chatId, `Ваш выбор ${data}`);
         // console.log(msg)
