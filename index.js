@@ -13,8 +13,8 @@ const chats = {}
 
 const startRating = async (chatId) =>{
     await bot.sendMessage(chatId, `Готель \"ДНІПРО\"`);
-const randomNumber = Math.floor(Math.random()*5)
-chats[chatId]=randomNumber;
+// const randomNumber = Math.floor(Math.random()*5)
+// chats[chatId]=randomNumber;
     await bot.sendMessage(chatId, `Оцініть якість обслуговування від 0 до 5`, ratingOptions);
 
 }
@@ -51,12 +51,14 @@ const start = () => {
         if (data==='/again'){
             return startRating(chatId);
         }
-        if (data==chats[chatId]){
-            return await bot.sendMessage (chatId, `Щиро дякую ${chats[chatId]}`, againgOptions);
-        } else {
-            return await bot.sendMessage (chatId, `Дякую ${chats[chatId]}`, againgOptions);
-        }
-    // bot.sendMessage(chatId, `Ваш выбор ${data}`);
+        // if (data==chats[chatId]){
+        //     return await bot.sendMessage (chatId, `Щиро дякую ${chats[chatId]}`, againgOptions);
+        // } 
+        // else {
+        //     return await bot.sendMessage (chatId, `Дякую ${chats[chatId]}`, againgOptions);
+        // }
+    bot.sendMessage(chatId, `Ваша оцінка ${data}`);
+    return await bot.sendMessage (chatId, `Дякую`, againgOptions);
         // console.log(msg)
     })
 }

@@ -13,7 +13,7 @@ module.exports={
  againgOptions : {
     reply_markup: JSON.stringify({
         inline_keyboard: [
-            [{text: 'Бажаєте ще?', callback_data: `/again`}],
+            [{text: 'Бажаєте змінити оцінку?', callback_data: `/again`}],
         ]
     })
 },
