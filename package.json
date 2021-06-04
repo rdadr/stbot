@@ -18,6 +18,7 @@
   },
   "homepage": "https://git.heroku.com/nodestbot.git",
   "dependencies": {
+    "express": "^4.17.1",
     "node-telegram-bot-api": "^0.53.0",
     "nodemon": "^2.0.7",
     "pg": "^8.6.0",
