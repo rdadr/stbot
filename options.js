@@ -13,17 +13,17 @@ module.exports={
  againgOptions : {
     reply_markup: JSON.stringify({
         inline_keyboard: [
-            [{text: 'Бажаєте змінити оцінку?', callback_data: `/again`}],
+            [{text: 'Повторити?', callback_data: `/again`}],
         ]
     })
 },
 
-// exitOptions : {
-//     reply_markup: JSON.stringify({
-//         inline_keyboard: [
-//             [{text: 'Вихід', callback_data: `/exit`}],
-//         ]
-//     })
-// }
+exitOptions : {
+    reply_markup: JSON.stringify({
+        inline_keyboard: [
+            [{text: 'Вихід', callback_data: `/exit`}],
+        ]
+    })
+}
 
 }
