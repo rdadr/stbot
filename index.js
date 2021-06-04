@@ -1,5 +1,5 @@
 const TelegramBot = require('node-telegram-bot-api')
-const TelegramApi = require('node-telegram-bot-api')
+// const TelegramApi = require('node-telegram-bot-api')
 
 //keyboard
 const{ratingOptions, againgOptions} = require('./options')
