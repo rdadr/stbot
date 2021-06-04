@@ -52,7 +52,7 @@ const start = () => {
     }
     const startExit = async (chatId) =>{
         await bot.sendMessage(chatId, `Заходьте ще!`);
-        await bot.sendSticker(chatId, `./stickers/38.webp`);
+        await bot.sendSticker(chatId, `./stickers/36.webp`);
 
     }
     
