@@ -1,10 +1,11 @@
+const TelegramBot = require('node-telegram-bot-api')
 const TelegramApi = require('node-telegram-bot-api')
 
 //keyboard
 const{ratingOptions, againgOptions} = require('./options')
 
 const token = '1724675577:AAErbQ3MM97t-b6439YXyrIPjmkbruA0LGI'
-const bot = new TelegramApi(token, {polling: true})
+const bot = new TelegramBot(token, {polling: true})
 
 //DataBase
 const chats = {}

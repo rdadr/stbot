@@ -1,4 +1,4 @@
-    //keyboard
+    //keyboard rating
 module.exports={
  ratingOptions : {
     reply_markup: JSON.stringify({
@@ -8,6 +8,8 @@ module.exports={
     })
 },
 
+
+//again
  againgOptions : {
     reply_markup: JSON.stringify({
         inline_keyboard: [
